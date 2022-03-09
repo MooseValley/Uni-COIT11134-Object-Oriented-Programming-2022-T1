@@ -48,7 +48,7 @@ and briefly discuss other ways (Desktop App, Netbeans, Eclipse, develop your own
 
 * **Mike O's Programming Practice Questions** - v0.008 (PDF):
 Dozens of interesting programming questions for you to practice, explore, solve.
-<br>https://www.mediafire.com/file/dpk59wchfu715to/Mike_O%27s_Programming_Practice_Questions_-_v0.008.pdf/file
+<br>https://www.mediafire.com/file/dpk59wchfu715to/Mike_O%27s_Programming_Practice_Questions_-_v0.008.pdf
 
 **Mike O'Malley**
 <br>Email: m.omalley@cqu.edu.au
