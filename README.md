@@ -9,7 +9,7 @@ This repo will include:
 * etc.
 
 ### Contact info:
-* CC: "Venu" Umapathy Venugopal, Ph. 02 9324 5789, Sydney, Email: u.venugopal@cqu.edu.au
+* Unit Coordinator: Bruce McKenzie, Email: b.mckenzie@cqu.edu.au, Melbourne, Phone: 03 9616 0609.
 * Rocky Tutor: Mike O, email: m.omalley@cqu.edu.au
 
 ### Golden Rules for Success:
