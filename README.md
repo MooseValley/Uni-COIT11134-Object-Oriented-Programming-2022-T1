@@ -32,8 +32,11 @@ This repo will include:
 
 * **This Github Repo:** https://github.com/MooseValley/Uni-COIT11134-Object-Oriented-Programming-2022-T1
 
-* **Mike O'Malley's Java Videos** (many dozes of useful videos for Java programmers of all levels !):
+* **Mike O'Malley's Java Videos** (many dozes of useful videos for Java programmers of all levels !  Includes all Java FX videos.):
 <br>http://tinyurl.com/MikesJavaVideos
+
+* **Mike O'Malley's Java FX Videos** - just Java FX videos:
+<br>http://tinyurl.com/MikesJavaFXVideos
 
 * **Backups - How To:**
 How to keep backups and SECURE backups on Windows PCs.
