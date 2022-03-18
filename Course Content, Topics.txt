@@ -1,0 +1,12 @@
+Week 1 - Revision of Java Classes, Objects and Methods
+Week 2 - Inheritance
+Week 3 - Polymorphism
+Week 4 - JavaFX GUI Part A
+Week 5 - JavaFX GUI Part B
+Week 6 - Exception handling
+Week 7 - Interfaces and Inner Classes
+Week 8 - Generic Methods
+Week 9 - Generic classes
+Week 10 - Linked Lists, Files and Algorithms
+Week 11 - Stacks, Queues and Trees
+Week 12 - Final Revision

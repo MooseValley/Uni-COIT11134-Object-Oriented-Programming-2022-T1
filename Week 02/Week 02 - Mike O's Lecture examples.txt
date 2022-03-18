@@ -1,0 +1,50 @@
+******************************************************
+COIT11134 Object Oriented Programming (2022-T1)
+Week: 02
+Course WEB Page (Moodle):         https://moodle.cqu.edu.au/course/view.php?id=36018
+Course Coordinator:               Bruce Mckenzie, email: b.mckenzie@cqu.edu.au, Ph. 03 9616 0609, Melbourne.
+Rocky Teacher (Part-Time):        Mike O'Malley, m.omalley@cqu.edu.au
+Mike O's GitHub for course/term:  https://github.com/MooseValley/Uni-COIT11134-Object-Oriented-Programming-2022-T1
+Mike O'Malley's Java Videos:      http://tinyurl.com/MikesJavaVideos
+******************************************************
+
+ROAD MAP:
+Week 01 - Revision of Java, Github review.
+Week 02 - Inheritance    <--- YOU ARE HERE !
+Week 03 - Polymorphism
+Week 04 - GUI and Event Handling
+Week 05 - GUI and Event Handling.  Next week: mid-term break
+Week 06 - Exception Handling, and File IO
+Week 07 - Interfaces and Inner Classes
+Week 08 - Generic methods and classes
+Week 09 - Generic classes
+Week 10 - List and Algorithm
+Week 11 - Stacks, Queues and Trees
+Week 12 - Final Revision
+
+
+LAST WEEK: Week 01
+* Week 01 - Revision of Java, Github review.
+
+THIS WEEK: Week 02
+* Week 02 - Inheritance    <--- YOU ARE HERE !
+
+
+BuildingTester
+
+  // *** Homework:
+
+  // Use an array
+  // For Loops: Counter and Enhanced
+  Building[] buldingsArray = new Building [10];
+
+  // :::
+
+  // Use an ArrayList
+  // For Loops: Counter and Enhanced
+  ArrayList<Building> buildingsArrayList = new ArrayList<>();
+
+  // :::
+
+
+EOF.
