@@ -26,4 +26,69 @@ Week 12 - Final Revision
 THIS WEEK: Week 01
 * Week 01 - Revision of Java, Github review.    <--- YOU ARE HERE !
 
+
+
+*** Primative Types
+int
+double
+char
+boolean
+
+int k = 0;
+
+*** Reference Types
+String
+Date
+Employee
+
+
+String name = "Mike";
+Employee emp1 = new Employee (::::::::);
+
+
+    emp1 ----->   name: <unknown>
+                  salary: 0
+
+    emp2 --------> name: Frank
+                   salary: 110
+
+
+*** Object class
+The parent of every class / class hierarchy in Java
+
+When we write:
+	public class Employee
+
+Java does this behind the scenes:
+	public class Employee extends Object
+
+
+Object o1 = "Mike";
+
+o1 = 123;
+
+o1 = new Date();
+
+"wildcard" data type
+
+
+
+@Override
+
+Computer Game
+Player
+Monster
+Scenery - destructible and non-destruct
+Non-Player characters
+
+Player p1 = new Player();
+p1.addToGameWorld();
+
+Monster m1 = new Monster("Skeleton", 100, 10);
+m1.addToGameWorld();
+
+Override can save your bacon when you are dealing with complex projects, lots of classes and methods.
+
+
+
 EOF.
