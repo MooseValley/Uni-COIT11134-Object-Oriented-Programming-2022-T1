@@ -29,4 +29,114 @@ LAST WEEK: Week 02
 THIS WEEK: Week 03
 * Week 03 - Polymorphism    <--- YOU ARE HERE !
 
+
+Arrays
+
+String[] name = new String [100]; // 0..99, 100 names
+double[] temperatures = new double [24];
+
+String name[] = new String [100]; // 0..99, 100 names
+
+
+String[] names, adresses, phones; // All 3 are arrays
+
+String names[], adresses, phones; // Only names is an array
+
+
+
+Building
+ -> House  (getBathrooms)
+    -> Movable
+    -> Brick
+    -> Timber
+ -> Office
+ -> Trade
+
+
+Building[] buildings = new Building [100];
+
+buildings[0] = new Movable (.....);
+buildings[1] = new Office  (.....);
+
+
+
+Polymorphism = many forms
+
+buildings[2] = new House  (.....);
+
+// NOT SAFE - we should check the data type first:
+S.o.p (buildings[2].getBathrooms() ); // OK
+S.o.p (buildings[1].getBathrooms() ); // ERROR - Office is not a house !!
+S.o.p (buildings[0].getBathrooms() ); // OK - Movable is a type of house
+
+
+// SAFE:
+
+if (buildings[2] instanceof House)
+    S.o.p (buildings[2].getBathrooms() ); // OK
+
+
+
+
+**** Type Casting and instanceof
+
+converting one type of data to another
+
+double val = 4.5;
+
+int k = val; // ERROR
+
+int k = (int) val; // OK, k = 4.
+
+Building b = new House (...);
+int beds = b.getNumBedrooms(); // gives an ERROR
+
+int beds = ((House) b).getNumBedrooms(); // OK no error, but still not safe ...
+
+
+if (b instanceof House)
+   int beds = ((House) b).getNumBedrooms(); // OK and SAFE !
+
+
+
+*** Abstract and Concrete classes
+
+Concrete class: you can create objects, instances
+
+	Employee emp1 = new Employee ("Mike, 100);
+
+Concrete classes do NOT have "abstract" in the declaration: "public class"
+
+
+Abstract classes are missing the implementation of one of more methods
+cannot create objects or instances of the Abstract class
+
+Abstract classes have "abstract" in the declaration: "public abstract class"
+
+
+
+equals
+compareTo
+
+
+
+1.	What are abstract methods? Describe the circumstances in which an abstract method would be appropriate.
+
+What ? place holders for what is to come - a template
+Why ? what to msake it so that all classes in a hierarchy have the same methods
+Might not have the data yet
+e.g. Employee class does NOT have weeklySalary or Pay Rate / Pieces to work out the salary
+
+
+2.	Distinguish between an abstract class and a concrete class.
+
+Abstract clases ........ 2 pages of beautiful, 100% correct text
+Concrete classes ........ 2 pages of beautiful, 100% correct text
+0
+Compare and Contrast
+how are they same
+how are they different
+
+Abstract class canno
+
 EOF.
