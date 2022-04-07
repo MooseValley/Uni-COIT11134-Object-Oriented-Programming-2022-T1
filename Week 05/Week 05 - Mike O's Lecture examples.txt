@@ -29,4 +29,131 @@ LAST WEEK: Week 04
 THIS WEEK: Week 05
 * Week 05 - GUI and Event Handling.  Next week: mid-term break    <--- YOU ARE HERE !
 
+
+
+************************************************************************
+*** AWT -> Swing -> JavaFX
+************************************************************************
+
+AWT
+* basic components, same as OS
+
+Swing
+* More components, sexier, more options
+
+JavaFX
+* Charts
+* DatePicker
+* etc
+
+
+Java GUI program
+* everything in 1 file, including the kitchen sink
+* hard to test / debug / understand
+
+Java GUI program
+* very nicely separated into separate files
+* much easier test / debug / understand
+* Very reusable
+
+Model View Controller (MVC)
+* as above, but better
+* Models: is you data classes.  e.g. Employee, Person, Product, etc
+* Views: these are the GUI "windows" that interact with the user - show output, get input, etc.  e.g. Main menu, Create Employee, Display all Employees, etc
+* Controllers: this is the brains of the ap.  The processing that is done when a user clicks a button, etc
+
+
+
+
+************************************************************************
+*** Exception Handling
+************************************************************************
+
+try, catch, finally, throw
+
+int k = Integer.parseInt ("123");
+int x = Integer.parseInt ("abc"); // ERROR --> CRASH !  Stack Trace
+
+try
+{
+   // put the line(s) of code that might cause exceptions ...
+}
+catch (Exception err)
+{
+   // Deal with the exception.
+}
+
+
+
+int value = 0;
+
+try
+{
+   value = Integer.parseInt ("abc");
+}
+catch (NumberFormatException err)
+{
+   // Deal with the exception.
+   value = 0;
+   System.out.println ("ERROR: could not convert 'abc' to an integer.");
+   JOptionPane.showMessageDialog (null, "ERROR: could not convert 'abc' to an integer.");
+}
+
+
+
+Exception Hierarchy
+
+You can your own Exceptions
+
+Very powerful
+
+
+Unchecked Exceptions
+	Java does NOT care if you don't handle the exception.
+	Up to the programmer to deal with.
+	Examples: Integer.parseInt ("abc");
+	My code will still compile, run, and crash if I don't handle the exceptions.
+	Java does NOT care.
+	
+Checked Exceptions
+	Some commands in Java are soooooo dangerous
+	Java will NOT even let you use the commands unless you deal with the exceptions
+	try catch OR  throws in method header to let another method deal with the exception
+	Your code will NOT compile unless you deal with the Exceptions somewhere !
+	File I/O
+	Network I/O
+	Graphics
+	OS calls
+	Database I/O
+	
+
+************************************************************************
+*** JavaFX + NetBeans + Scene Builder
+************************************************************************
+
+Mike O'Malley's JavaFX + NetBeans + Scene Builder Videos:      
+
+	http://tinyurl.com/MikesJavaFXVideos
+
+	https://github.com/MooseValley/JavaFX-NetBeans-SceneBuilder---00---List-of-all-Videos-and-Github-Repos
+
+
+Multiple Scenes: https://youtu.be/m5853rAfekE
+DatePickers and LocalDates: https://youtu.be/W-Y9vo_SglI
+File I/O basics - read, write, load, save files: https://youtu.be/KV6hlM3iiag
+Error - Incompatible Types - cannot be converted to ObservableList CAP 1: https://youtu.be/_VroSG2473g
+Part 01 - Add a Student: https://youtu.be/P4D73ZEaja0
+Part 02 - Display All Students: https://youtu.be/NPT_6mv0CdM
+Part 03 - Add and Display Courses: https://youtu.be/rLYwbhxtcdo
+Part 04 - Add Student Course Enrolment 01: https://youtu.be/FvpO_2w8ZEQ
+Part 05 - Add Student Course Enrolment 02: https://youtu.be/UX5s22q8KwE
+Part 06 - Add Test Data: https://youtu.be/BbvD6s2g_Q8
+Part 07 - Display All Student Enrolments: https://youtu.be/967rpvwNc1U
+Part 08 - Improve User Inputs Validation, Exception Handling, User Defined Exceptions: https://youtu.be/GsEhWXDpHCY
+Part 09 - Exit Confirmation, handle X icon (close): https://youtu.be/ESYNMtsx1kQ
+Part 10 - File I/O - Preparation and Strategy: https://youtu.be/HoUy026CbLE
+Part 11 - File I/O - Load and Save Students and Courses: https://youtu.be/4kRaOsogpxk
+Part 12 - File I/O - Load and Save Enrolments: https://youtu.be/9gctczsb6O8
+
+
 EOF.
