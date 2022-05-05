@@ -29,4 +29,35 @@ LAST WEEK: Week 06
 THIS WEEK: Week 07
 * Week 07 - Interfaces and Inner Classes    <--- YOU ARE HERE !
 
+
+
+Abstract
+* template
+* so all children and grand children implemented the required methods
+* A class can extend 0 or 1 abstract interfaces
+* cannot create objects
+
+Interfaces
+* template
+* A class can implement 0, 1, or many interfaces
+* can create objects
+
+
+public MyGUI implements AbstractListener ....
+
+
+public MyGUI extends JFrame implements AbstractListener, ChangeListener, MouseListener, etc ....
+
+
+public abstract class MyClass
+:::
+
+public interface MyInterface
+:::
+
+
+
+
+
+
 EOF.

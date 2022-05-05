@@ -29,4 +29,146 @@ LAST WEEK: Week 05
 THIS WEEK: Week 06
 * Week 06 - Exception Handling, and File IO    <--- YOU ARE HERE !
 
+
+Many ways to read and write  a file in Java
+BufferedReader / Writer
+InputStreams / OutputStreams
+Scanner
+Formatter
+etc
+
+
+OPEN file for output
+:::: write data to it with a specific layout.  e.g. tab separated or one field per line
+CLOSE file
+
+OPEN file for input
+:::: read data from it with a specific layout.  e.g. tab separated or one field per line
+:::: conststruct class objects and add them to Array, ArrayList, LinkedList
+:::: keep going while there is more data to read
+CLOSE file
+
+
+
+
+Unchecked Exceptions
+* many commands in Java can cause Exceptions
+int k = 5 / 0;
+int val = Integer.parseInt ("abc");
+etc
+* all of these are Unchecked Exceptions
+* Java does NOT care if your program crashes or if you handle the errors
+* Up to the programmer to handle these (if they want to)
+
+
+
+
+Checked Exceptions
+* File I/O, Network I/O, Database I/O
+* all of these are CHECKED Exceptions
+* your program will not compile unless you handle the exceptions
+* Handle means: try ... catch ....   OR  throws on method header
+
+
+    public static void readFile ()  throws FileNotFoundException
+    {
+        Scanner inFile = new Scanner (new FileReader("staffphone.txt") );
+        
+        while (inFile.hasNextLine() == true)
+        {
+            String inStr = inFile.nextLine();
+            
+            System.out.println (inStr);
+        }
+        
+        inFile.close();
+    }
+
+    public static void main(String[] args) {
+        //launch(args);
+        
+        try
+        {
+            readFile ();
+        }
+        catch (FileNotFoundException err)
+        {
+            // Do NOT fail silently.
+            err.printStackTrace();
+            
+            System.out.println ("File NOT found.");
+        }
+        
+    }
+    
+************************************************
+
+
+    public static void readFile ()  //throws FileNotFoundException
+    {
+        try
+        {
+            Scanner inFile = new Scanner (new FileReader("staffphone.txt") );
+
+            while (inFile.hasNextLine() == true)
+            {
+                String inStr = inFile.nextLine();
+
+                System.out.println (inStr);
+            }
+
+            inFile.close();
+        }
+        catch (FileNotFoundException err)
+        {
+            // Do NOT fail silently.
+            err.printStackTrace();
+            
+            System.out.println ("File NOT found.");
+        }
+    }
+    
+    
+    public static void main(String[] args) {
+        //launch(args);
+        
+        readFile ();
+        
+    }
+    
+
+
+********************************************************
+
+Types of Files
+
+Text Files
+Binary File
+
+
+
+OPEN FILE for output
+::: loop through arraylist and write data out to file
+CLOSE FILE
+
+
+
+*** Typed Files
+
+OPEN FILE for output
+::: write data to file - no loop - only 1 write command
+CLOSE FILE
+
+You can write an ArrayList of Students or whatever to file with one write command.
+
+Not plain text any more - control characters / special characters
+Islands of plain text in a sea of "gobbledy gook".
+
+Your class(es) must implements serializable:
+
+	public class Student implements serializable
+	::::
+	
+
+
 EOF.
