@@ -29,4 +29,106 @@ LAST WEEK: Week 08
 THIS WEEK: Week 09
 * Week 09 - Generic classes    <--- YOU ARE HERE !
 
+
+Add this code to your App Constructor:
+
+		setDefaultCloseOperation (JFrame.DO_NOTHING_ON_CLOSE);
+
+		addWindowListener (new WindowAdapter()
+		{
+			public void windowClosing (WindowEvent e)
+			{
+				exitApplication (); // Or whatever the method is called !
+			}
+		});
+
+
+
+
+Swing Input Dialogs
+
+String name = JOptionPane.showInputDialog (null, "Enter name:");
+
+
+
+**************************************************************
+*** Validation
+**************************************************************
+
+
+boolean dataValid = true;
+String name = nameTextField.getText().trim();
+String lessonsStr = lessonsTextField.getText().trim();
+int lessons = 0;
+
+if (dataValid == true) 
+{
+    if (name.length() == 0)
+      // display error and put cursor in name text field
+      dataValid = false;
+}
+
+
+
+if (dataValid == true) 
+{
+    try
+    {
+       lessons = Integer.parseInt ......
+       
+       if (lessons < 1)
+           throw new .......
+    }
+    catch (....)
+    {
+       // display error and put cursor in Lessons text field
+    }
+    
+    dataValid = false;
+}
+
+
+if (dataValid == true) 
+{
+   // Check the next input ...
+   
+}
+
+
+if (dataValid == true) 
+{
+    Booking .... = new .....
+    
+    arraylist.add .....
+    
+    display a success message
+    
+    reset all inputs ...
+}
+
+
+
+
+Generidc methods
+
+Assignment 2:
+
+Display All
+	
+Search
+	
+
+private void display (boolean searchMode)
+{
+   // display headings
+   // loop through data looking for match (or all if searchMode is false)
+   
+   if search mode  
+      if none found
+         display a error dialog
+      else if found
+         display a success dialog (if needed)
+   
+}
+
 EOF.
