@@ -29,4 +29,45 @@ LAST WEEK: Week 09
 THIS WEEK: Week 10
 * Week 10 - List and Algorithm    <--- YOU ARE HERE !
 
+
+
+LinkedList<String> myList = new LinkedList<String>(); ListIterator<String> iter;
+
+myList.addFirst("John"); 
+
+	[John]
+	
+myList.addFirst("David"); 
+
+	[David]-->[John]
+
+iter = myList.listIterator();  // Fixed
+iter.next(); 
+
+               iter
+	 	V
+	[David]-->[John]
+
+
+iter.add("Peter"); 	// Adds new node after the current node AND before the iterator
+
+               		iter
+	 	          V
+	[David]-->[Peter]-->[John]
+
+
+iter.next();
+
+	                           iter
+	 	 	            V
+	[David]-->[Peter]-->[John]
+
+iter.add("Joshua");
+
+	                          iter
+	 	 	           V
+	[David]-->[Peter]-->[John]-->[Joshua]
+
+
+
 EOF.
