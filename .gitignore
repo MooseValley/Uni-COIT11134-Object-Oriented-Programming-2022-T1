@@ -35,4 +35,4 @@
 *.pptx
 *.pdf
 
-#/Exams - Past/*.pdf
+!/Exams - Past/*.pdf
