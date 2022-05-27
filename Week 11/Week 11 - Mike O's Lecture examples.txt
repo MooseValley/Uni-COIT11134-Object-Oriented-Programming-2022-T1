@@ -29,4 +29,90 @@ LAST WEEK: Week 10
 THIS WEEK: Week 11
 * Week 11 - Stacks, Queues and Trees    <--- YOU ARE HERE !
 
+
+
+Balanced Tree - aka BTree
+
+50, 30, 99, 3, 44, 150, 290, 5, 145
+
+               50
+             /    \
+          30       99
+         /  \       \
+        3    44      150
+         \          /  \
+          5       145  290
+
+
+Pre-Order Traversal
+ - output value and then move nodes
+50, 30, 3, 5, 44, 99, 150, 145, 290
+
+In-Order Traversal
+- if you can go left, go left, otherwise output value and go right or up
+- outputs the values in ascending sorted order (if your tree is a correct BTree)
+3, 5, 30, 44, 50, 99, 145, 150, 290
+
+Post-Order Traversal
+- move nodes left if poss, or else right or up and output values as you go up
+5, 3, 44, 30, 50, 145, 290, 150, 99
+
+
+Big-O - how efficient an algorithm is
+
+O(n) = if you double the data, you double the time
+e.g. linear search of array
+
+O(n^2) = if you double the data, you quadruple the time
+
+
+
+Sort:
+	Bubble Sort		O(n^2)
+	Insertion Sort		O(n^2)
+
+	all easy to understand, very easy to program, and very inefficient
+	OK to sue if you don't need to sort a lot of data often
+
+	Merge Sort	O(n log n) approx
+		hard to understand, hard to program, but more efficient than the above
+	
+
+	BTrees
+		O(log n)	approx
+
+
+
+
+|
+|
+
+
+
+Hide data in images - Stenography
+
+
+16 million
+RGB 0-256
+
+
+Hi Mike, .....
+H = ASCII 72
+A = 65
+
+10101110
+
+
+7
+
+Pixel 112, 233, 114
+
+
+
+
+Fractals
+	z = y + 0.5 x
+
 EOF.
+
+
